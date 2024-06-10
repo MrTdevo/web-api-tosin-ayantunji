@@ -1,3 +1,14 @@
+// function myFunction() {
+//   var element = document.body;
+//   element.classList.toggle("dark-mode");
+// }
+// function changebackground() {
+//   if (modeTogle.style.backgroundColor === "white") {
+//     modeTogle.style.backgroundColor = "ash";
+//   } else {
+//     modeTogle.style.backgroundColor = "yellow";
+//   }
+// }
 const form = document.getElementById("post-form");
 
 (function () {
@@ -32,3 +43,19 @@ form.addEventListener("submit", function (e) {
 
   window.location.href = "/blog.html";
 });
+
+const modeTogle = document.getElementById("mode-toggle");
+
+function changeBackground() {
+  const body = document.body;
+
+  // Check the current background color and toggle it
+  if (
+    body.style.backgroundColor === "white" ||
+    body.style.backgroundColor === ""
+  ) {
+    body.style.backgroundColor = "grey";
+  } else {
+    body.style.backgroundColor = "white ";
+  }
+}

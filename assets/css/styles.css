@@ -1,47 +1,41 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  margin-top: 40px;
-}
-.star-toggle {
-  position: fixed;
-  top: 50px;
-  right: 40px;
+#mode-toggle {
+  display: flex;
+  color: orangered;
+  float: right;
   cursor: pointer;
-  font-size: 2rem;
-  transition: transform 0.3s ease;
-  color: gold; /* Color for the star */
+  background-color: white;
+  /* height: 50px; */
 }
 
 .line1,
 .line2 {
-  display: block;
+  position: relative;
+  margin-top: 1px;
   width: 100%;
   border: 2px solid black;
 }
 
 .parent {
-  margin-top: 25px;
+  margin-top: 0;
   display: flex;
-  justify-content: space-around;
-  height: 600px;
+
+  justify-content: center;
+  height: 850px;
 }
 
 .left {
   position: relative;
-  border: 3px solid black;
+  /* border: 3px solid black; */
   width: 40%;
+  gap: 30px;
 }
 
 .left > div {
   top: 50px;
-  left: 140px;
+  left: 100px;
   position: absolute;
-  height: 400px;
-  width: 400px;
+  height: 500px;
+  width: 500px;
   background-color: gold;
   border-radius: 50%;
 }
@@ -53,19 +47,17 @@ header {
   color: white;
 }
 
-.vl {
-  border-left: 2px solid black;
-  height: 690px;
+.vl,
+.vl2 {
+  width: 4px; /* Width of the line */
+  height: 100%; /* Height of the line */
+  background-color: black; /* Color of the line */
+  margin: 0 1px;
 }
 
-.vl2 {
-  margin: 0;
-  border-left: 2px solid black;
-  height: 690px;
-}
 .right {
   position: relative;
-  border: 3px solid black;
+  /* border: 3px solid black; */
   width: 40%;
 }
 
@@ -77,7 +69,15 @@ header {
 h2 {
   text-align: center;
   position: relative;
-  margin-top: 90px;
+  margin-top: 50px;
+}
+
+.card {
+  top: 10px;
+  margin-left: 10px;
+  color: black;
+  justify-content: space-evenly;
+  font-weight: bold;
 }
 
 input {
@@ -116,6 +116,7 @@ form > button {
   margin-top: 20px;
   margin-left: 20px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .footer {

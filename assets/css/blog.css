@@ -1,0 +1,37 @@
+#mode-toggle {
+  display: flex;
+  color: orangered;
+  float: right;
+  cursor: pointer;
+  background-color: white;
+}
+
+.line3,
+.line4 {
+  width: 100%;
+  border: 2px solid black;
+}
+a {
+  flex-direction: row;
+  display: block;
+  height: 22px;
+  width: 80px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  /* padding: 10px; */
+  float: right;
+  font-weight: bold;
+}
+footer {
+  position: absolute;
+  display: inline-block;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  background-color: black;
+  text-align: center;
+  color: white;
+
+  font-family: sans-serif;
+}
