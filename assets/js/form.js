@@ -31,7 +31,7 @@ form.addEventListener("submit", function (e) {
   posts.push(post);
   localStorage.setItem("posts", JSON.stringify(posts));
 
-  window.location.href = "/blog.html";
+  window.location.href = "./blog.html";
 });
 
 const modeTogle = document.getElementById("mode-toggle");
