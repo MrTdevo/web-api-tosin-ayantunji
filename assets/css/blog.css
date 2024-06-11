@@ -24,7 +24,7 @@ a {
   font-weight: bold;
 }
 footer {
-  position: absolute;
+  position: fixed;
   display: inline-block;
   bottom: 0;
   width: 100%;
@@ -34,4 +34,24 @@ footer {
   color: white;
 
   font-family: sans-serif;
+}
+.post {
+  height: 150px;
+  border: 2px solid black;
+  margin-top: 10px;
+}
+.username {
+  border: 2px solid black;
+}
+.content {
+  border: 2px solid black;
+}
+.title {
+  font-style: underline;
+  /* font-weight: 200; */
+  font-style: bold;
+  font-size: 20px;
+  border-bottom: 2px solid black;
+  width: 100%;
+  margin-bottom: 1px;
 }

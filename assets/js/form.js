@@ -1,14 +1,3 @@
-// function myFunction() {
-//   var element = document.body;
-//   element.classList.toggle("dark-mode");
-// }
-// function changebackground() {
-//   if (modeTogle.style.backgroundColor === "white") {
-//     modeTogle.style.backgroundColor = "ash";
-//   } else {
-//     modeTogle.style.backgroundColor = "yellow";
-//   }
-// }
 const form = document.getElementById("post-form");
 
 (function () {
@@ -36,6 +25,7 @@ form.addEventListener("submit", function (e) {
     // if key same as value, you only need it once
     content,
   };
+  console.log(post);
 
   const posts = JSON.parse(localStorage.getItem("posts"));
   posts.push(post);

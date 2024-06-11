@@ -21,7 +21,19 @@ const posts = JSON.parse(localStorage.getItem("posts")) || [];
 // console.log(posts);
 
 for (let index = 0; index < posts.length; index++) {
-  const testDiv = document.createElement("div");
-  testDiv.innerText = posts[index].username;
-  postsContainer.appendChild(testDiv);
+  const postDiv = document.createElement("div");
+  postDiv.classList.add("post");
+  const titleDiv = document.createElement("div");
+  titleDiv.innerText = posts[index].title;
+  titleDiv.classList.add("title");
+  postDiv.appendChild(titleDiv);
+
+  const contentDiv = document.createElement("div");
+  contentDiv.innerText = posts[index].content;
+  postDiv.appendChild(contentDiv);
+
+  const usernameDiv = document.createElement("div");
+  usernameDiv.innerText = `Created By ${posts[index].username}`;
+  postDiv.appendChild(usernameDiv);
+  postsContainer.appendChild(postDiv);
 }
